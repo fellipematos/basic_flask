@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "modulos"
+version = "0.1.0"
+description = ""
+authors = ["fellipematos <box.fellipematos@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+flask = "^3.1.0"
+google-auth-oauthlib = "^1.2.1"
+httpx = "^0.28.0"
+flask-login = "^0.6.3"
+flask-sqlalchemy = "^3.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
