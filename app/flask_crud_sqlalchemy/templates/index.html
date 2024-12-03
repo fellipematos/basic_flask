@@ -1,0 +1,15 @@
+<a href="{{ url_for('create_user') }}"><button>[+] Adicionar</button></a>
+<BR><BR>
+<h1>READ</h1>
+<table>
+    {% for u in user %}
+        <tr>
+            <td style="width:200px">{{ u.name }}</td>
+            <td style="width:150px">{{ u.code }}</td>
+            <td>
+                <a href="/update/{{ u.id }}">Editar</a> |
+                <a href="/delete/{{ u.id }}">Excluir</a>
+            </td>
+        </tr>
+    {% endfor %}
+</table>
