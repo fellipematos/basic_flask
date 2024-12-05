@@ -1,0 +1,15 @@
+<h1>Dados do CEP</h1>
+
+<address>
+    {{ result.street }}<BR>
+    {{ result.neighborhood }}<BR>
+    {{ result.city }}<BR>
+    {{ result.state }}<BR>
+    {{ result.cep }}<BR>
+</address>
+<BR><BR>
+<span>
+    <b>Tipo:</b> {{ result.location.type }}<BR><BR>
+    <b>Longitude:</b> {{ result.location.coordinates.longitude }}<BR>
+    <b>Latitude:</b> {{ result.location.coordinates.latitude }}
+</span>
