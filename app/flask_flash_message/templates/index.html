@@ -1,0 +1,14 @@
+<form action="" method="post">
+    <input type="text" name="flag" placeholder="Digite a Flag correta"><BR><BR>
+    <input type="submit" value="Enviar">
+</form>
+
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+
+    {% for message in messages %}
+      <p>{{ message }}</p>
+    {% endfor %}
+    
+  {% endif %}
+{% endwith %}
