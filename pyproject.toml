@@ -17,6 +17,7 @@ httpx = "^0.28.0"
 flask-debugtoolbar = "^0.16.0"
 bootstrap-flask = "^2.4.1"
 flask-socketio = "^5.4.1"
+pytubefix = "^8.8.1"
 
 
 [build-system]

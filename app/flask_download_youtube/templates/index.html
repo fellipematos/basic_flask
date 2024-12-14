@@ -1,0 +1,14 @@
+<form action="" method="post">
+    <input type="text" name="url" placeholder="Insira o link do youtube">
+    <input type="submit" value="DOWNLOAD">
+</form>
+
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+
+    {% for message in messages %}
+      <p>{{ message }}</p>
+    {% endfor %}
+    
+  {% endif %}
+{% endwith %}
